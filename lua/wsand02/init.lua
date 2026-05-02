@@ -17,6 +17,13 @@ autocmd('LspAttach', {
     end
 })
 
+autocmd('FileType', {
+    pattern = { "c", "cpp", "lua", "python", "go", "rust", "javascript", "typescript" },
+    callback = function ()
+       vim.treesitter.start() 
+    end,
+})
+
 vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 25
