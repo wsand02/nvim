@@ -14,6 +14,8 @@ return {
 				go = { "goimports", "gofmt" },
 				javascript = { "prettier" },
 				typescript = { "prettier" },
+				json = { "prettier" },
+                jsonc = { "prettier" },
 			},
 			formatters = {
 				["clang-format"] = {
