@@ -18,6 +18,7 @@ return {
         typescriptreact = { "prettier" },
         json = { "prettier" },
         jsonc = { "prettier" },
+        rust = { "rustfmt" },
       },
       formatters = {
         ["clang-format"] = {
